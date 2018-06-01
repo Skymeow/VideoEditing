@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'ProjectBM' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ProjectBM
+  pod 'Fabric'
+  pod 'Crashlytics'
+  pod 'Mixpanel'
+  pod 'RealmSwift'
+  pod 'AWSMobileClient', '~> 2.6.6'
+  pod 'AWSS3', '~> 2.6.6'   # For file transfers
+  pod 'AWSCognito', '~> 2.6.6'   #For data sync
+  pod 'Alamofire'
+  pod 'Kingfisher', '~> 4.0'
+  pod 'FAPaginationLayout'
+  target 'ProjectBMTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ProjectBMUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
